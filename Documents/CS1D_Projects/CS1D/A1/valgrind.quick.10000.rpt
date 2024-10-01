@@ -1,0 +1,20 @@
+==613497== Memcheck, a memory error detector
+==613497== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==613497== Using Valgrind-3.22.0.GIT and LibVEX; rerun with -h for copyright info
+==613497== Command: ./a.out /usr/shar
+==613497== Parent PID: 611933
+==613497== 
+==613497== Conditional jump or move depends on uninitialised value(s)
+==613497==    at 0x401A2E: quickSort(int*, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613497==    by 0x4013F9: main (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613497== 
+==613497== 
+==613497== HEAP SUMMARY:
+==613497==     in use at exit: 0 bytes in 0 blocks
+==613497==   total heap usage: 3 allocs, 3 frees, 75,776 bytes allocated
+==613497== 
+==613497== All heap blocks were freed -- no leaks are possible
+==613497== 
+==613497== Use --track-origins=yes to see where uninitialised values come from
+==613497== For lists of detected and suppressed errors, rerun with: -s
+==613497== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

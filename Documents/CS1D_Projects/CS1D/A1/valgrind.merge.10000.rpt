@@ -1,0 +1,56 @@
+==613683== Memcheck, a memory error detector
+==613683== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==613683== Using Valgrind-3.22.0.GIT and LibVEX; rerun with -h for copyright info
+==613683== Command: ./a.out /usr/shar
+==613683== Parent PID: 611933
+==613683== 
+==613683== Conditional jump or move depends on uninitialised value(s)
+==613683==    at 0x4016B3: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x401360: main (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683== 
+==613683== Conditional jump or move depends on uninitialised value(s)
+==613683==    at 0x4016B3: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x40191D: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x401360: main (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683== 
+==613683== Conditional jump or move depends on uninitialised value(s)
+==613683==    at 0x4016B3: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x40191D: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x40191D: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x401360: main (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683== 
+==613683== Conditional jump or move depends on uninitialised value(s)
+==613683==    at 0x4016B3: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x40191D: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x40191D: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x40191D: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==    by 0x401360: main (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683== 
+==613683== Stack overflow in thread #1: can't grow stack to 0x1ffe801000
+==613683== 
+==613683== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==613683==  Access not within mapped region at address 0x1FFE801FF8
+==613683== Stack overflow in thread #1: can't grow stack to 0x1ffe801000
+==613683==    at 0x4016A0: mergeSort(int*, int, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==613683==  If you believe this happened as a result of a stack
+==613683==  overflow in your program's main thread (unlikely but
+==613683==  possible), you can try to increase the size of the
+==613683==  main thread stack using the --main-stacksize= flag.
+==613683==  The main thread stack size used in this run was 8388608.
+==613683== 
+==613683== HEAP SUMMARY:
+==613683==     in use at exit: 75,776 bytes in 3 blocks
+==613683==   total heap usage: 3 allocs, 0 frees, 75,776 bytes allocated
+==613683== 
+==613683== LEAK SUMMARY:
+==613683==    definitely lost: 0 bytes in 0 blocks
+==613683==    indirectly lost: 0 bytes in 0 blocks
+==613683==      possibly lost: 0 bytes in 0 blocks
+==613683==    still reachable: 75,776 bytes in 3 blocks
+==613683==         suppressed: 0 bytes in 0 blocks
+==613683== Reachable blocks (those to which a pointer was found) are not shown.
+==613683== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==613683== 
+==613683== Use --track-origins=yes to see where uninitialised values come from
+==613683== For lists of detected and suppressed errors, rerun with: -s
+==613683== ERROR SUMMARY: 74825 errors from 4 contexts (suppressed: 0 from 0)

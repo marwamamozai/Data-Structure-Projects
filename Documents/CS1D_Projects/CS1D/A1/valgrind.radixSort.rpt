@@ -1,0 +1,20 @@
+==612529== Memcheck, a memory error detector
+==612529== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==612529== Using Valgrind-3.22.0.GIT and LibVEX; rerun with -h for copyright info
+==612529== Command: ./a.out 1
+==612529== Parent PID: 611933
+==612529== 
+==612529== Conditional jump or move depends on uninitialised value(s)
+==612529==    at 0x401D38: radixSort(int*, int, int) (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==612529==    by 0x401460: main (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+==612529== 
+==612529== 
+==612529== HEAP SUMMARY:
+==612529==     in use at exit: 0 bytes in 0 blocks
+==612529==   total heap usage: 3 allocs, 3 frees, 75,776 bytes allocated
+==612529== 
+==612529== All heap blocks were freed -- no leaks are possible
+==612529== 
+==612529== Use --track-origins=yes to see where uninitialised values come from
+==612529== For lists of detected and suppressed errors, rerun with: -s
+==612529== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

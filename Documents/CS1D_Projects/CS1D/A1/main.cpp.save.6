@@ -1,0 +1,121 @@
+
+marweezzy@Marwas-MacBook-Air ~ % ssh mmamozai0@10.10.10.150
+
+ssh: connect to host 10.10.10.150 port 22: Operation timed out
+marweezzy@Marwas-MacBook-Air ~ % 
+marweezzy@Marwas-MacBook-Air ~ % 
+marweezzy@Marwas-MacBook-Air ~ % ssh mmamozai0@10.10.10.150 
+mmamozai0@10.10.10.150's password: 
+Last login: Mon Feb  5 18:45:54 2024 from 10.0.8.5
+[mmamozai0@gryffindor ~]$ l
+Desktop  Documents  Downloads  thinclient_drives[mmamozai0@gryffindor ~]$ tree
+.
+├── Deskto
+├── Documents
+│   └── CS1D
+│       ├── A1
+│       │   ├── a.out│       │   ├── main.cpp
+│       │   ├── main.cpp.save
+│       │   ├── main.cpp.save.1
+│       │   ├── main.cpp.save.2
+│       │   ├── main.cpp.save.3
+│       │   ├── main.cpp.save.4
+│       │   └── main.cpp.save5
+│       ├── A2
+│       └── A
+├── Downloads
+└── thinclient_drives
+
+9 directories, 8 files
+[mmamozai0@gmozai0@gryffindor A1]$ nano main.cpp
+[mmamozai0@gryffindor A1]$ nano main.cpp.save.5
+  GN nano 7.2                    main.cpp.save.5                               
+  1 #include <iostream>                                                        
+  2 using namespace std;                                                        
+  3                                                                            
+  4 // Functions                                                               
+  5                                                                             
+  6 //UBBLESORT                                                               
+  7                                                                            
+  8 void bubbleSort ( int A [], int n ) {                                       
+  9                                                                        
+ 10  for ( int i = 0; i < n -1 ; 
+#include <iostream> 
+using namespace std; 
+
+// Function
+
+//BUBBLE SORT 
+
+void bubbleSort ( int A [], int n ) {
+ 
+ for ( int i = 0; i < n -1 ; ++i) {
+   
+   for ( int j = n - 1; j > i ; --j{ 
+   
+     if ( A[j] < A[j-1]) {
+       // swap A[j} and A[j-1]
+        int temp = A[j];
+       
+        A[j] = A[j-1];
+		  A[-1] = temp; 
+		} // end if 
+	  } // end (for int j) 
+   } // end (for int i) 
+ } //end function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main ()
+{
+	cout << "hello world" << endl; 
+ 
+// what do you want to do? 
+// I am going to make fucntions for  my program, then i am going to call
+// them  within the switch statement, have the fucntions above my main 
+// then call them within the swtich statemnt 
+
+
+
+
+
+
+
+   char sort;
+
+	cout << " what sort do you want to run ? : " endl; 
+	cout << " A ( quicksort) , B ( mergesort) , etc : " endl; 
+	
+	cin >> sort; 
+	
+	switch (sort) { 
+	case ('A')// make sure to do toupper 
+   {
+      // put  function  
+   } //end A case  
+
+	case ('B') 
+   { 
+ 			//fucntion
+   }  
+
+	case ('C') 
+	{      // fucntion 
+   } 
+ 
+
+
+
+	return 0 
+} 

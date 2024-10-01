@@ -1,0 +1,287 @@
+desc: --massif-out-file=massif.out
+cmd: ./hash_table_test
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2893241
+mem_heap_B=73728
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2895790
+mem_heap_B=73768
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2898787
+mem_heap_B=73772
+mem_heap_extra_B=44
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2899885
+mem_heap_B=73780
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2901990
+mem_heap_B=73780
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=detailed
+n2: 73780 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x49152DD: pool (eh_alloc.cc:235)
+  n1: 73728 0x49152DD: UnknownInlinedFun (eh_alloc.cc:373)
+   n1: 73728 0x49152DD: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:456)
+    n1: 73728 0x4005276: call_init (dl-init.c:74)
+     n1: 73728 0x4005276: call_init (dl-init.c:26)
+      n1: 73728 0x400536C: _dl_init (dl-init.c:121)
+       n0: 73728 0x401C40F: ??? (in /usr/lib64/ld-linux-x86-64.so.2)
+ n0: 52 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=2901990
+mem_heap_B=73776
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2902887
+mem_heap_B=73792
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2903212
+mem_heap_B=73784
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2904758
+mem_heap_B=73816
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2905081
+mem_heap_B=73800
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2908335
+mem_heap_B=73864
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=2908659
+mem_heap_B=73832
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=2911084
+mem_heap_B=74856
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=2924109
+mem_heap_B=75256
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=2929304
+mem_heap_B=76056
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=detailed
+n4: 76056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x49152DD: pool (eh_alloc.cc:235)
+  n1: 73728 0x49152DD: UnknownInlinedFun (eh_alloc.cc:373)
+   n1: 73728 0x49152DD: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:456)
+    n1: 73728 0x4005276: call_init (dl-init.c:74)
+     n1: 73728 0x4005276: call_init (dl-init.c:26)
+      n1: 73728 0x400536C: _dl_init (dl-init.c:121)
+       n0: 73728 0x401C40F: ??? (in /usr/lib64/ld-linux-x86-64.so.2)
+ n1: 1024 0x4C54476: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4C63683: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4C63683: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x4C61797: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+     n1: 1024 0x4C62297: _IO_new_file_xsputn (fileops.c:1244)
+      n1: 1024 0x4C62297: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+       n1: 1024 0x4C55B42: fwrite (iofwrite.c:39)
+        n1: 1024 0x49AAB5C: sputn (streambuf:458)
+         n1: 1024 0x49AAB5C: __ostream_write<char, std::char_traits<char> > (ostream_insert.h:53)
+          n1: 1024 0x49AAB5C: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (ostream_insert.h:104)
+           n1: 1024 0x49AAEAA: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:673)
+            n0: 1024 0x40137A: main (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+ n1: 800 0x405861: std::__new_allocator<std::pair<int, int> >::allocate(unsigned long, void const*) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+  n1: 800 0x40484E: std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned long) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+   n1: 800 0x403B81: std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_default_append(unsigned long) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+    n1: 800 0x40267A: std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::resize(unsigned long) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+     n1: 800 0x401E78: RobinHoodHashTable::RobinHoodHashTable(int) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+      n0: 800 0x40152C: main (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+ n0: 504 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=2939254
+mem_heap_B=76456
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=2941287
+mem_heap_B=76856
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2948466
+mem_heap_B=76856
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=peak
+n4: 76856 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x49152DD: pool (eh_alloc.cc:235)
+  n1: 73728 0x49152DD: UnknownInlinedFun (eh_alloc.cc:373)
+   n1: 73728 0x49152DD: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:456)
+    n1: 73728 0x4005276: call_init (dl-init.c:74)
+     n1: 73728 0x4005276: call_init (dl-init.c:26)
+      n1: 73728 0x400536C: _dl_init (dl-init.c:121)
+       n0: 73728 0x401C40F: ??? (in /usr/lib64/ld-linux-x86-64.so.2)
+ n1: 1304 0x40511B: std::__new_allocator<int>::allocate(unsigned long, void const*) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+  n2: 1304 0x4042A4: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+   n1: 800 0x40318F: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+    n1: 800 0x40243E: std::vector<int, std::allocator<int> >::resize(unsigned long, int const&) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+     n0: 800 in 2 places, all below massif's threshold (1.00%)
+   n0: 504 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x4C54476: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4C63683: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4C63683: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x4C61797: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+     n1: 1024 0x4C62297: _IO_new_file_xsputn (fileops.c:1244)
+      n1: 1024 0x4C62297: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+       n1: 1024 0x4C55B42: fwrite (iofwrite.c:39)
+        n1: 1024 0x49AAB5C: sputn (streambuf:458)
+         n1: 1024 0x49AAB5C: __ostream_write<char, std::char_traits<char> > (ostream_insert.h:53)
+          n1: 1024 0x49AAB5C: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (ostream_insert.h:104)
+           n1: 1024 0x49AAEAA: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:673)
+            n0: 1024 0x40137A: main (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+ n1: 800 0x405861: std::__new_allocator<std::pair<int, int> >::allocate(unsigned long, void const*) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+  n1: 800 0x40484E: std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned long) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+   n1: 800 0x403B81: std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_default_append(unsigned long) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+    n1: 800 0x40267A: std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::resize(unsigned long) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+     n1: 800 0x401E78: RobinHoodHashTable::RobinHoodHashTable(int) (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+      n0: 800 0x40152C: main (in /home/mmamozai0/Documents/CS1D/A8/hash_table_test)
+#-----------
+snapshot=19
+#-----------
+time=2948466
+mem_heap_B=76456
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=2948627
+mem_heap_B=76056
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=2948798
+mem_heap_B=75256
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=2948969
+mem_heap_B=74856
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=2949140
+mem_heap_B=74792
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=2949304
+mem_heap_B=74752
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=2956480
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2958534
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

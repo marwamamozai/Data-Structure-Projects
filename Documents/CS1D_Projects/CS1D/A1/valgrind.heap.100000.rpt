@@ -1,0 +1,15 @@
+==613444== Memcheck, a memory error detector
+==613444== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==613444== Using Valgrind-3.22.0.GIT and LibVEX; rerun with -h for copyright info
+==613444== Command: ./a.out /usr/shar
+==613444== Parent PID: 611933
+==613444== 
+==613444== 
+==613444== HEAP SUMMARY:
+==613444==     in use at exit: 0 bytes in 0 blocks
+==613444==   total heap usage: 3 allocs, 3 frees, 75,776 bytes allocated
+==613444== 
+==613444== All heap blocks were freed -- no leaks are possible
+==613444== 
+==613444== For lists of detected and suppressed errors, rerun with: -s
+==613444== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

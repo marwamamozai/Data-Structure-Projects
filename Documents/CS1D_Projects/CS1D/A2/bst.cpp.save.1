@@ -1,0 +1,83 @@
+#include "bst.h"
+#include <stddef.h>  // For NULL
+#include <stdlib.h>  // For malloc, free
+
+void insert_into(struct Node** root, int value) {
+	(void) root;
+	(void) value;
+
+	cout << "Entered insert_into..." << endl; //prompt that fucntion is being entered 
+
+	Node *z = NULL;  // the node that will  potentially be created, w/ value as the key 
+	Node *x = *root; // intialize pointer to the root and this node will be compaired to z 
+	Node *y = NULL;  // initialize pointer to store the parent of z ( y will be parent of z)
+
+	//Loop until reahcing a leaf or node with the matching value 
+	while (x!= NULL){
+		y = x; //update y to store the current node to x.... (!!!!!!!!)
+
+		if(value == x-> value)// If the value is eqaul to the node its pointing to (in the tree), 
+			return;			    // return w/o inserting anything 
+
+		if(value < x-> value) // if the value is less than the value of the current node its pointing to
+			x = x->left;		 // move to the left child,
+
+		else //else move to the right child
+			x = x->right;
+	}// end while 
+
+	// create a new node w/ specified value and left & right children w/ NULL // same var
+	z = new struct Node;
+	z->value = value; 
+	z->left  = NULL;
+	z->right = NULL;
+
+	// new node is going ot be child of parent so set it as that 
+	if(y == NULL) //if empty then make it as the root (this is the new node) 
+		*root = z;
+	else if(value < y->value) //if the val is less than parent val then set the node as left child
+		y->left = z; 
+	else // else set the new node as the right child 
+		y->right = z;
+
+	return;
+}
+
+void free_tree(struct Node* root) {
+	/* TODO: Implement this function! */
+	(void) root;
+
+
+
+
+
+	return;
+}
+
+
+
+
+
+
+
+
+
+
+
+size_t size_of(const struct Node* root) {
+	/* TODO: Implement this function! */
+	(void) root;
+	return 0;
+}
+
+int* contents_of(const struct Node* root) {
+	/* TODO: Implement this function! */
+	(void) root;
+	return NULL;
+}
+
+const struct Node* second_min_in(const struct Node* root) {
+	/* TODO: Implement this function! */
+	(void) root;
+	return NULL;
+}

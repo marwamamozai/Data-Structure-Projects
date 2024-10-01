@@ -1,0 +1,100 @@
+desc: (none)
+cmd: ./a.out 10000_numbers.txt 0
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2893005
+mem_heap_B=73728
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2895998
+mem_heap_B=74752
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2908406
+mem_heap_B=75776
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2918648
+mem_heap_B=75776
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=peak
+n2: 75776 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x49122BD: pool (eh_alloc.cc:235)
+  n1: 73728 0x49122BD: UnknownInlinedFun (eh_alloc.cc:373)
+   n1: 73728 0x49122BD: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:456)
+    n1: 73728 0x4005276: call_init (dl-init.c:74)
+     n1: 73728 0x4005276: call_init (dl-init.c:26)
+      n1: 73728 0x400536C: _dl_init (dl-init.c:121)
+       n1: 73728 0x401C3CF: ??? (in /usr/lib64/ld-linux-x86-64.so.2)
+        n1: 73728 0x2: ???
+         n1: 73728 0x1FFF00043A: ???
+          n1: 73728 0x1FFF000442: ???
+           n0: 73728 0x1FFF000454: ???
+ n1: 2048 0x4C51496: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4C606D3: _IO_doallocbuf (genops.c:347)
+   n2: 2048 0x4C606D3: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x4C5E413: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+     n1: 1024 0x4C60781: _IO_default_uflow (genops.c:362)
+      n1: 1024 0x497CEC0: syncgetc (stdio_sync_filebuf.h:226)
+       n1: 1024 0x497CEC0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (stdio_sync_filebuf.h:134)
+        n1: 1024 0x498AC9E: sgetc (streambuf:351)
+         n1: 1024 0x498AC9E: sgetc (streambuf:345)
+          n1: 1024 0x498AC9E: std::istream::sentry::sentry(std::istream&, bool) (istream.tcc:60)
+           n1: 1024 0x498C59E: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char&) (istream.tcc:980)
+            n0: 1024 0x4012CD: main (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+    n1: 1024 0x4C5E7B7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+     n1: 1024 0x4C5F2B7: _IO_new_file_xsputn (fileops.c:1244)
+      n1: 1024 0x4C5F2B7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+       n1: 1024 0x4C52B62: fwrite (iofwrite.c:39)
+        n1: 1024 0x49A7A5C: sputn (streambuf:458)
+         n1: 1024 0x49A7A5C: __ostream_write<char, std::char_traits<char> > (ostream_insert.h:53)
+          n1: 1024 0x49A7A5C: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (ostream_insert.h:104)
+           n1: 1024 0x49A7DAA: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:673)
+            n0: 1024 0x4011EB: main (in /home/mmamozai0/Documents/CS1D/A1/a.out)
+#-----------
+snapshot=5
+#-----------
+time=2918648
+mem_heap_B=2048
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2920563
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2920597
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

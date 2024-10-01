@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+.Trash/
+
+# User-specific files
+.CFUserTextEncoding
+.IdentityService/
+.aspnet/
+.cache/
+.config/
+.cups/
+.designer/
+.dotnet/
+.eclipse/
+.gitconfig
+.local/
+.m2/
+.mono/
+.nuget/
+.p2/
+.ssh/
+.swiftpm/
+.templateengine/
+.vscode/
+.zprofile
+.zsh_history
+.zsh_sessions/
+
+# IDE-related files
+.metadata/
+*.java
+*.class
+*.iml
+.idea/
+
+# Build directories
+build-*/
+
+# Folders to ignore
+/Applications/
+/Library/
+/Movies/
+/Music/
+/Pictures/
+/Public/

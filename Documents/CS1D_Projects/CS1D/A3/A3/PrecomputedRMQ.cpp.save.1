@@ -1,0 +1,39 @@
+#include "PrecomputedRMQ.h"
+
+
+//constructor 
+PrecomputedRMQ::PrecomputedRMQ(const RMQEntry* elems, std::size_t numElems) {
+  //void elems;
+ // void numElems;
+
+
+
+	std::size_t n = numElems;
+	rmqTable.resize(n,std::vector<std::size_t>(n));
+
+	for(std::size_t i = 0; i < n; ++i){
+		for(std::size_t j = i; j< n; ++j){
+			if( i == j){
+				rmqTable[i][j] = i; 
+			}else{
+				rmqTable[i][j] = (elems[rmqTable[i][j-1]] <= elems[j]) ? rmqTable[i][j-1] :j;
+					}//end else
+			}//end for 
+		}//end for 
+
+} //end fucntion
+
+
+
+PrecomputedRMQ::~PrecomputedRMQ() {
+  /* TODO: Delete this comment and implement this function. */
+}
+
+std::size_t PrecomputedRMQ::rmq(std::size_t low, std::size_t high) const {
+  /* TODO: Delete this line, the lines after this one, and implement
+   * this function.
+   */
+  (void) low;
+  (void) high;
+  return 0;
+}
